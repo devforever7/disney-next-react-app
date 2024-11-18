@@ -97,7 +97,7 @@ pnpm run start
 - Profile management with server-side storage
 - Detailed character information pages
 - Responsive navigation menu
-- Featured characters section
+- Featured characters section that is statically generated at build time and revalidated every hour
 - Error handling and loading states
 
 ## 🔍 Technical Details

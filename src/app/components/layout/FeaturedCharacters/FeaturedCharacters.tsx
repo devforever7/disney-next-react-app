@@ -2,9 +2,15 @@ import { getCharacters } from '@/lib/api/characters';
 import { CharacterGrid } from '@/app/components/characters/CharacterGrid/CharacterGrid';
 import styles from './FeaturedCharacters.module.css';
 
+export const revalidate = 3600;
+
 /**
- * Server component that fetches and displays featured characters
- * Implements server-side data fetching for optimal performance
+ * Featured characters component using Incremental Static Regeneration
+ * Features:
+ * - Static page generation at build time
+ * - Background revalidation every hour
+ * - Cached responses between revalidations
+ * - Optimized delivery through CDN
  * @component
  */
 export async function FeaturedCharacters() {

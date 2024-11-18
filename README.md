@@ -115,6 +115,13 @@ pnpm run start
 - CSS Modules for scoped styling
 - TypeScript for type safety
 - Accessibility features throughout
+- Code Quality Enforcement:
+  - ESLint configuration with Next.js and TypeScript rules
+  - Prettier formatting with standardized rules
+  - Available npm scripts:
+    - `pnpm lint` - Check for code quality issues with ESLint
+    - `pnpm format` - Auto-format all files with Prettier
+    - `pnpm format:check` - Verify formatting compliance with Prettier
 - Comprehensive unit testing setup with Jest and React Testing Library
 - Isolated server and client component testing with proper mocking strategies
 - Testing for date utility function

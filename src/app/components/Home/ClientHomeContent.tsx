@@ -34,10 +34,7 @@ export const ClientHomeContent = ({
 
   return (
     <section className={styles.wrapper}>
-      <SearchBar
-        onSearch={setSearchTerm}
-        placeholder="Search Disney characters..."
-      />
+      <SearchBar onSearch={setSearchTerm} />
       {filteredCharacters.length === 0 ? (
         <p className={styles.noResults}>
           {searchTerm ? (

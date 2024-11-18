@@ -7,7 +7,10 @@ import { NavMenu } from '@/app/components/ui/NavMenu/NavMenu';
 
 interface ISearchBarProps {
   onSearch: (value: string) => void;
-  placeholder?: string;
+  placeholder?: {
+    mobile: string;
+    desktop: string;
+  };
   initialValue?: string;
 }
 
@@ -22,10 +25,16 @@ interface ISearchBarProps {
 
 export function SearchBar({
   onSearch,
-  placeholder,
+  placeholder = {
+    mobile: 'Search...',
+    desktop: 'Search Disney characters...',
+  },
   initialValue = '',
 }: ISearchBarProps) {
   const [value, setValue] = useState(initialValue);
+  const [currentPlaceholder, setCurrentPlaceholder] = useState(
+    placeholder.desktop
+  );
 
   useEffect(() => {
     setValue(initialValue);
@@ -34,6 +43,18 @@ export function SearchBar({
   useEffect(() => {
     onSearch(value);
   }, [value, onSearch]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCurrentPlaceholder(
+        window.innerWidth < 500 ? placeholder.mobile : placeholder.desktop
+      );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [placeholder]);
 
   return (
     <div className={styles.searchContainer}>
@@ -52,7 +73,7 @@ export function SearchBar({
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
               setValue(e.target.value)
             }
-            placeholder={placeholder}
+            placeholder={currentPlaceholder}
             className={styles.input}
           />
         </div>

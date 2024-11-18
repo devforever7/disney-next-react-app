@@ -97,7 +97,6 @@ const SearchPageContent = () => {
     <>
       <SearchBar
         onSearch={setSearchTerm}
-        placeholder="Search Disney characters..."
         initialValue={initialQueryRef.current}
       />
       <SearchResults searchTerm={debouncedSearchTerm} />

@@ -19,7 +19,7 @@ export default async function Home() {
 
   return (
     <>
-      <main className={styles.page}>
+      <main>
         <h1 className={styles.title}>Disney Character Explorer</h1>
         <ClientHomeContent initialCharacters={initialCharacters} />
         <FeaturedCharacters />

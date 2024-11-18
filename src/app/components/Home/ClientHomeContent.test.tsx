@@ -21,9 +21,19 @@ describe('ClientHomeContent', () => {
     render(<ClientHomeContent initialCharacters={mockCharacters} />);
     const searchInput = screen.getByRole('searchbox');
     fireEvent.change(searchInput, { target: { value: 'Pluto' } });
-    expect(screen.getByText(/Characters matching Pluto/)).toBeInTheDocument();
+
+    // Use a more flexible text matching approach
     expect(
-      screen.getByText('Click here to search all characters')
+      screen.getByText((content) => content.includes('Characters matching'))
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('Pluto', { selector: 'strong' })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText((content) => content.includes('not in preloaded list'))
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /click here to search all characters/i })
     ).toBeInTheDocument();
   });
 });

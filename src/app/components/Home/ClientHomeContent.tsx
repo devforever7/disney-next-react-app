@@ -33,15 +33,17 @@ export const ClientHomeContent = ({
   }, [searchTerm, initialCharacters]);
 
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} role="status">
       <SearchBar onSearch={setSearchTerm} />
       {filteredCharacters.length === 0 ? (
         <p className={styles.noResults}>
           {searchTerm ? (
             <>
-              Characters matching {searchTerm} not in preloaded list.{' '}
+              Characters matching{' '}
+              <strong className={styles.searchTerm}>{searchTerm}</strong> not in
+              preloaded list.{' '}
               <Link href={`/search?q=${searchTerm}`}>
-                Click here to search all characters
+                Click here to search all characters.
               </Link>
             </>
           ) : (

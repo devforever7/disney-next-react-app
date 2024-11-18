@@ -94,7 +94,7 @@ pnpm run start
 
 ## 🌟 Features
 
-- Character search with caching and debounced API calls
+- Character search with skeleton loading states, query parameters, caching and debounced API calls
 - Profile management with server-side storage
 - Detailed character information pages
 - Responsive navigation menu
@@ -105,7 +105,7 @@ pnpm run start
 
 - Server-side rendering for `/character/[id]` and profile pages, and some for home
 - Static pregeneration and caching for featured characters
-- Debounced client-side search with React Query for caching
+- Debounced client-side search with skeleton loading states, query parameters and React Query for caching
 - HTTP-only cookies for secure profile storage
 - Next.js Image component for optimal image loading
 - CSS Modules for scoped styling

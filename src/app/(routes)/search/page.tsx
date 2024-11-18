@@ -29,7 +29,7 @@ const SearchResultsWrapper = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={styles.gridWrapper}>
+    <div className={styles.gridWrapper} role="status">
       <h1 className={styles.searchResultsTitle}>{title}</h1>
       {children}
     </div>

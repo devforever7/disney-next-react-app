@@ -21,7 +21,7 @@ The application is deployed and accessible at:
 
 All production routes are protected and require authentication (Github/Gitlab/email) through Vercel's platform.
 
-## 🚀 Technology Choices
+## ⚙️ Technology Choices
 
 ### PNPM Package Manager
 

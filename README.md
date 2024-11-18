@@ -110,14 +110,30 @@ pnpm run start
 - TypeScript for type safety
 - Accessibility features throughout
 
-## 📝 Notes
+## 📋 Future Enhancements
 
-Some future follow-up ideas
+### User Interface
 
-- I would like to add the Mickey Mouse pointer cursor to more interactive elements.
-  Right now all such elements still do at least have hover color changes and good tab accessibility outlines.
-- I would like to use the NavMenu component everywhere and refactor layouts a little so that the <nav> element is outside the main tag. Right now it's only used via the avatar button next to the search bar on the home and search pages.
-- Pagination for search results. Right now we only return 8 results so no need yet.
-- Some unit tests
+- Implement cursor: pointer styling for all interactive elements to improve user feedback
+  - User feedback is currently supported by hover state changes and keyboard focus outlines
+
+### Navigation & Layout
+
+- Refactor navigation implementation for better accessibility and user experience
+  - Move NavMenu component with `<nav>` tag outside of `<main>` tag
+  - Standardize navigation pattern across all routes
+  - Navigation menu is currently limited to top right avatar button usage on home and search pages
+
+### Functionality
+
+- Add pagination support for search results
+  - Current implementation limited to 8 results per query
+  - Prepare for scaling with larger result sets
+  - Consider implementing infinite scroll as alternative
+
+### Testing
+
+- Implement comprehensive test suite
+  - Unit tests for core components
 
 This project uses the Disney API for educational purposes only. All character content belongs to Disney.

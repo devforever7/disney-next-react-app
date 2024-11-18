@@ -2,6 +2,25 @@
 
 A Next.js application showcasing Disney characters with modern web development practices and optimal performance.
 
+## 🚀 Deployment
+
+The application is deployed and accessible at:
+[https://disney-next-react-app.vercel.app/](https://disney-next-react-app.vercel.app/)
+
+### Navigation
+
+- The main navigation is available on the search and home pages via the avatar button on the top right, next to the search bar.
+
+### Available Routes
+
+- `/` - Home page with featured characters and local search
+- `/search` - Full search functionality with debounced API calls
+- `/character/:id` - Individual character details and media appearances
+- `/profile` - User profile view with Disney preferences
+- `/profile/edit` - Profile creation and editing interface
+
+All production routes are protected and require authentication (Github/Gitlab/email) through Vercel's platform.
+
 ## 🚀 Technology Choices
 
 ### PNPM Package Manager

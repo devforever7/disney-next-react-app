@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noResults {
+  text-align: center;
+  padding: 32px;
+  background-color: var(--gray-alpha-200);
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.noResults a {
+  color: var(--disney-teal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.noResults a:hover {
+  opacity: 0.8;
+}
+
+.gridWrapper {
+  background: var(--gray-alpha-200);
+  width: 100%;
+  padding: 32px;
+}

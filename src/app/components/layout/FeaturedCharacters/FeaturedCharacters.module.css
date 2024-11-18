@@ -1,0 +1,16 @@
+.featuredTitle {
+  font-family: var(--font-lato);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: white;
+}
+
+.gridWrapper {
+  background: var(--disney-teal);
+  padding: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

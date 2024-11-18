@@ -1,0 +1,34 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --gray-alpha-200: rgba(0, 0, 0, 0.05);
+  --gray-alpha-100: rgba(241, 242, 243, 1);
+  --gray-alpha-300: rgba(91, 104, 115, 1);
+  --disney-teal: #054553;
+  --disney-teal-alpha: rgba(255, 255, 255, 0.1);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-lato);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

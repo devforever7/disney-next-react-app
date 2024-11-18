@@ -112,11 +112,6 @@ pnpm run start
 
 ## 📋 Future Enhancements
 
-### User Interface
-
-- Implement cursor: pointer styling for all interactive elements to improve user feedback
-  - User feedback is currently supported by hover state changes and keyboard focus outlines
-
 ### Navigation & Layout
 
 - Refactor navigation implementation for better accessibility and user experience

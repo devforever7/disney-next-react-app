@@ -15,10 +15,10 @@ interface ISearchBarProps {
 }
 
 /**
- * Unified search bar component with debounced input
+ * Unified search bar component
  * Features:
  * - Integrated navigation menu
- * - Responsive design
+ * - Responsive design with shorter placeholder on smaller screens
  * - Accessibility support
  * @component
  */
@@ -51,7 +51,7 @@ export function SearchBar({
       );
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [placeholder]);

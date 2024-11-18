@@ -46,7 +46,11 @@ All production routes are protected and require authentication (Github/Gitlab/em
 - Server-side rendering for initial page loads
 - Build-time pre-generation and server-side caching of featured characters
 - Client-side navigation for smooth transitions
-- Image optimization and lazy loading
+- Advanced image optimization:
+  - AVIF format prioritized for superior compression and quality (50-90% smaller than JPEG)
+  - WebP fallback for broader browser support
+  - Priority loading for above-the-fold character images
+  - Lazy loading for grid and featured images
 - HTTP-only cookies for secure profile management
 
 ### User Experience

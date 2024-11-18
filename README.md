@@ -14,7 +14,7 @@ The application is deployed and accessible at:
 ### Available Routes
 
 - `/` - Home page with featured characters and local search
-- `/search` - Full search functionality with debounced API calls
+- `/search` - Full search functionality with debounced API calls, caching, skeleton loading states, and query parameters
 - `/character/:id` - Individual character details and media appearances
 - `/profile` - User profile view with Disney preferences
 - `/profile/edit` - Profile creation and editing interface

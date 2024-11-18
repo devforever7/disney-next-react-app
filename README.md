@@ -111,13 +111,13 @@ pnpm run start
 - Static pregeneration and caching for featured characters
 - Debounced client-side search with skeleton loading states, query parameters and React Query for caching
 - HTTP-only cookies for secure profile storage
-- Next.js Image component for optimal image loading
+- Next.js Image component for optimal image loading (lazy/priority loading, prefer avif format)
 - CSS Modules for scoped styling
 - TypeScript for type safety
 - Accessibility features throughout
 - Comprehensive unit testing setup with Jest and React Testing Library
-- Isolated component testing with proper mocking strategies
-- Testing for API client functions
+- Isolated server and client component testing with proper mocking strategies
+- Testing for date utility function
 
 ## 📋 Future Enhancements
 
@@ -139,8 +139,8 @@ pnpm run start
 
 ✅ Current Test Coverage:
 
-- Unit tests for core components (SearchBar, ClientHomeContent)
-- API client function tests
+- Unit tests for core server and client components (Character profile page, SearchBar, ClientHomeContent)
+- Date utility function tests
 - Proper test isolation with mocked data
 
 🔄 Future Test Improvements:

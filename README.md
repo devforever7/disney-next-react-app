@@ -41,7 +41,7 @@ All production routes are protected and require authentication (Github/Gitlab/em
 
 ### Performance Optimizations
 
-- Debounced search with React Query for efficient API calls
+- Debounced search with React Query caching for efficient API calls
 - Skeleton loading states for better UX
 - Server-side rendering for initial page loads
 - Build-time pre-generation and server-side caching of featured characters
@@ -55,7 +55,7 @@ All production routes are protected and require authentication (Github/Gitlab/em
 - Accessible navigation with keyboard support
 - Semantic HTML structure
 - Loading states (like skeleton tiles for search) and error boundaries
-- Clean and intuitive UI
+- Clean and intuitive UI/UX
 
 ## 🛠 Setup & Installation
 
@@ -94,7 +94,7 @@ pnpm run start
 
 ## 🌟 Features
 
-- Character search with debounced API calls
+- Character search with caching and debounced API calls
 - Profile management with server-side storage
 - Detailed character information pages
 - Responsive navigation menu
@@ -104,7 +104,7 @@ pnpm run start
 ## 🔍 Technical Details
 
 - Server-side rendering for `/character/[id]` and profile pages, and some for home
-- Static pregeneration and cachingfor featured characters
+- Static pregeneration and caching for featured characters
 - Debounced client-side search with React Query for caching
 - HTTP-only cookies for secure profile storage
 - Next.js Image component for optimal image loading

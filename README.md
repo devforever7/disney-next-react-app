@@ -19,8 +19,6 @@ The application is deployed and accessible at:
 - `/profile` - User profile view with Disney preferences
 - `/profile/edit` - Profile creation and editing interface
 
-All production routes are protected and require authentication (Github/Gitlab/email) through Vercel's platform.
-
 ## ⚙️ Technology Choices
 
 ### PNPM Package Manager

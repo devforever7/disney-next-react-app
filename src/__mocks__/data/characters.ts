@@ -1,0 +1,36 @@
+import { ICharacter } from '@/lib/api/types';
+
+export const mockCharacters: ICharacter[] = [
+  {
+    _id: 1,
+    name: 'Mickey Mouse',
+    imageUrl: '/mickey.jpg',
+    films: [],
+    shortFilms: [],
+    tvShows: [],
+    videoGames: [],
+    parkAttractions: [],
+    allies: [],
+    enemies: [],
+    sourceUrl: '',
+    updatedAt: '',
+    url: '',
+    alignment: 'good',
+  },
+  {
+    _id: 2,
+    name: 'Donald Duck',
+    imageUrl: '/donald.jpg',
+    films: [],
+    shortFilms: [],
+    tvShows: [],
+    videoGames: [],
+    parkAttractions: [],
+    allies: [],
+    enemies: [],
+    sourceUrl: '',
+    updatedAt: '',
+    url: '',
+    alignment: 'good',
+  },
+];

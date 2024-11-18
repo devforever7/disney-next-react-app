@@ -33,7 +33,7 @@ All production routes are protected and require authentication (Github/Gitlab/em
 ### Next.js Framework
 
 - Server-side rendering for optimal performance and SEO
-- Automatic static optimization where applicable
+- Static optimization and pregeneration where applicable
 - Built-in image optimization with next/image
 - API routes and server actions for backend functionality
 - Efficient page routing and dynamic paths
@@ -44,6 +44,7 @@ All production routes are protected and require authentication (Github/Gitlab/em
 - Debounced search with React Query for efficient API calls
 - Skeleton loading states for better UX
 - Server-side rendering for initial page loads
+- Build-time pre-generation and server-side caching of featured characters
 - Client-side navigation for smooth transitions
 - Image optimization and lazy loading
 - HTTP-only cookies for secure profile management
@@ -103,7 +104,8 @@ pnpm run start
 ## 🔍 Technical Details
 
 - Server-side rendering for `/character/[id]` and profile pages, and some for home
-- Client-side search with React Query for caching
+- Static pregeneration and cachingfor featured characters
+- Debounced client-side search with React Query for caching
 - HTTP-only cookies for secure profile storage
 - Next.js Image component for optimal image loading
 - CSS Modules for scoped styling

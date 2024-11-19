@@ -70,4 +70,3 @@ pnpm run dev
 ## 📝 License & Attribution
 
 This project uses the Disney API for educational purposes only. All character content belongs to Disney.
-both

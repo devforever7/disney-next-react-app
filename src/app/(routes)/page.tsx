@@ -1,6 +1,6 @@
 import { getCharacters } from '@/lib/api/characters';
 import styles from './page.module.css';
-import { ClientHomeContent } from '@/app/components/home/ClientHomeContent';
+import { ClientHomeContent } from '@/app/components/homepage/ClientHomeContent';
 import { FeaturedCharacters } from '@/app/components/layout/FeaturedCharacters/FeaturedCharacters';
 
 /**

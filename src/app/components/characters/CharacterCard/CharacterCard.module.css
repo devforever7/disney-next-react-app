@@ -66,6 +66,7 @@
 .viewProfile {
   display: inline-block;
   width: fit-content;
+  height: 24px;
   margin: auto auto 0;
   text-align: center;
   font-weight: 900;

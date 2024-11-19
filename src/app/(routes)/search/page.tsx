@@ -12,7 +12,7 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, useEffect, useRef, Suspense } from 'react';
-import { SearchBar } from '@/app/components/ui/SearchBar/SearchBar';
+import { SearchBar } from '@/app/components/layout/Navigation/SearchBar/SearchBar';
 import { CharacterGrid } from '@/app/components/characters/CharacterGrid/CharacterGrid';
 import { CardGridSkeleton } from '@/app/components/ui/CardSkeleton/CardSkeleton';
 import { useDebounce } from '@/lib/hooks/utils/useDebounce';

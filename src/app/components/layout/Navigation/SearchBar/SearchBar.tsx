@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { ChangeEvent, useEffect, useState } from 'react';
-import styles from '@/app/components/ui/SearchBar/SearchBar.module.css';
-import { NavMenu } from '@/app/components/ui/NavMenu/NavMenu';
+import styles from '@/app/components/layout/Navigation/SearchBar/SearchBar.module.css';
+import { NavMenu } from '@/app/components/layout/Navigation/NavMenu/NavMenu';
 
 interface ISearchBarProps {
   onSearch: (value: string) => void;

@@ -48,7 +48,7 @@ pnpm run dev
 ### User Interface
 
 - Responsive and accessible design
-- Navigation menu via avatar button
+- Navigation menu via avatar button (home/search routes)
 - Skeleton loading states and error boundaries
 - Search with query parameters
 - HTTP-only cookies for secure profile management
@@ -65,7 +65,7 @@ pnpm run dev
 - Add pagination to search results
 - Move `<nav />` element outside of `<main/>` tag (`NavMenu` component)
 - Ensure `NavMenu` traps focus within itself when open
-- Create `Navigation` component in `components/layout` directory to handle navigation, and to consolidate `NavMenu` and `SearchBar` components.
+- Consolidate navigation menu for all routes
 
 ## 📝 License & Attribution
 

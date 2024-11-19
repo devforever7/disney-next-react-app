@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState, useMemo } from 'react';
-import { SearchBar } from '@/app/components/ui/SearchBar/SearchBar';
+import { SearchBar } from '@/app/components/layout/Navigation/SearchBar/SearchBar';
 import { CharacterGrid } from '@/app/components/characters/CharacterGrid/CharacterGrid';
 import { ICharacter } from '@/lib/api/types';
 import styles from './ClientHomeContent.module.css';

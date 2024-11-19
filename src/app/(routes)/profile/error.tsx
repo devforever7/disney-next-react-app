@@ -1,6 +1,6 @@
 'use client';
 
-import ErrorBoundary from '@/app/components/ui/ErrorBoundary/ErrorBoundary';
+import ErrorBoundary from '@/app/components/layout/ErrorBoundary/ErrorBoundary';
 
 export default function ProfileError({
   error,

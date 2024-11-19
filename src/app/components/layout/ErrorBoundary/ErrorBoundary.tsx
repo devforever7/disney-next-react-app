@@ -24,7 +24,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import styles from '@/app/components/ui/ErrorBoundary/ErrorBoundary.module.css';
+import styles from '@/app/components/layout/ErrorBoundary/ErrorBoundary.module.css';
 
 interface IErrorBoundaryProps {
   error: Error & { digest?: string };

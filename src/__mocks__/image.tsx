@@ -2,8 +2,8 @@ import { ImageProps } from 'next/image';
 import React from 'react';
 
 type MockImageProps = Omit<ImageProps, 'width' | 'height'> & {
-  width?: number | string;
-  height?: number | string;
+  width?: number;
+  height?: number;
 };
 
 type StaticImageData = {

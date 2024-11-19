@@ -65,7 +65,7 @@ pnpm run dev
 - Add pagination to search results
 - Move `<nav />` element outside of `<main/>` tag (`NavMenu` component)
 - Ensure `NavMenu` traps focus within itself when open
-- Consolidate navigation menu for all routes
+- Consolidate navigation pattern for all routes
 
 ## 📝 License & Attribution
 

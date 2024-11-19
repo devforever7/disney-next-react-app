@@ -1,30 +1,19 @@
 import { Metadata } from 'next';
-import { headers } from 'next/headers';
 import { FeaturedCharacters } from '@/app/components/layout/FeaturedCharacters/FeaturedCharacters';
 
 /**
- * Server search page layout with dynamic metadata generation
+ * Server search page layout with metadata
  * Features:
- * - Canonical URL and other SEO-optimized metadata
+ * - Basic SEO metadata
  * - Featured characters integration
  * - Layout structure for search pages
  * @component
  */
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
-  const canonicalUrl = `${protocol}://${host}/search`;
-
-  return {
-    title: 'Search Results',
-    description: 'Search for Disney characters',
-    alternates: {
-      canonical: canonicalUrl,
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: 'Search Results - Disney Character Explorer',
+  description: 'Search for Disney characters',
+};
 
 export default function SearchLayout({
   children,

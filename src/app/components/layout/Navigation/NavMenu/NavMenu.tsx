@@ -6,23 +6,29 @@ import Image from 'next/image';
 import styles from './NavMenu.module.css';
 import { usePathname } from 'next/navigation';
 
+const MENU_ITEMS = [
+  { href: '/', label: 'Home' },
+  { href: '/search', label: 'Search' },
+  { href: '/profile', label: 'Profile' },
+] as const;
+
 export function NavMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
+    const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
-    }
+    };
 
-    function handleEscapeKey(event: KeyboardEvent) {
+    const handleEscapeKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setIsOpen(false);
       }
-    }
+    };
 
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('keydown', handleEscapeKey);
@@ -66,38 +72,22 @@ export function NavMenu() {
             ✕
           </button>
           <ul role="menu" className={styles.menu}>
-            <li role="none">
-              <Link
-                href="/"
-                className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}
-                role="menuitem"
-                aria-current={pathname === '/' ? 'page' : undefined}
-              >
-                Home
-              </Link>
-            </li>
-            <li role="none">
-              <Link
-                href="/search"
-                className={`${styles.link} ${pathname === '/search' ? styles.active : ''}`}
-                role="menuitem"
-                aria-current={pathname === '/search' ? 'page' : undefined}
-              >
-                Search
-              </Link>
-            </li>
-            <li role="none">
-              <Link
-                href="/profile"
-                className={`${styles.link} ${pathname.startsWith('/profile') ? styles.active : ''}`}
-                role="menuitem"
-                aria-current={
-                  pathname.startsWith('/profile') ? 'page' : undefined
-                }
-              >
-                Profile
-              </Link>
-            </li>
+            {MENU_ITEMS.map(({ href, label }) => {
+              const isCurrentPath = pathname === href;
+
+              return (
+                <li key={href} role="none">
+                  <Link
+                    href={href}
+                    className={`${styles.link} ${isCurrentPath ? styles.current : ''}`}
+                    role="menuitem"
+                    aria-current={isCurrentPath ? 'page' : undefined}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       )}

@@ -148,7 +148,7 @@
   }
 }
 
-.active {
+.current {
   background-color: var(--gray-alpha-200);
   color: var(--disney-teal);
   pointer-events: none;

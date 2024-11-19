@@ -64,7 +64,7 @@ const SearchResults = ({ searchTerm }: { searchTerm: string }) => {
   if (!response?.data?.length) {
     return (
       <SearchResultsWrapper title={`Search Results - ${searchTerm}`}>
-        <p className={styles.noResults}>No characters found</p>
+        <p className={styles.noResults}>No characters found.</p>
       </SearchResultsWrapper>
     );
   }

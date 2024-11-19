@@ -48,7 +48,7 @@ export const ClientHomeContent = ({
                 </Link>
               </>
             ) : (
-              'No characters available'
+              'No characters available.'
             )}
           </p>
         ) : (

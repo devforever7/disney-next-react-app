@@ -14,7 +14,7 @@
 
 .noResults {
   text-align: center;
-  padding: 32px;
+  padding: 16px;
   color: var(--foreground);
   opacity: 0.7;
 }

@@ -44,7 +44,7 @@ export default async function CharacterPage(props: IProps) {
         <div className={styles.imageWrapper}>
           <Image
             src={characterData.imageUrl}
-            alt=""
+            alt={`Portrait of ${characterData.name}`}
             fill
             className={styles.image}
             sizes="(max-width: 768px) 100vw, 500px"

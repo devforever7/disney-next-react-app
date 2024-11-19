@@ -1,11 +1,15 @@
+'use client';
+
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NavMenu.module.css';
+import { usePathname } from 'next/navigation';
 
 export function NavMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -63,17 +67,34 @@ export function NavMenu() {
           </button>
           <ul role="menu" className={styles.menu}>
             <li role="none">
-              <Link href="/" className={styles.link} role="menuitem">
+              <Link
+                href="/"
+                className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}
+                role="menuitem"
+                aria-current={pathname === '/' ? 'page' : undefined}
+              >
                 Home
               </Link>
             </li>
             <li role="none">
-              <Link href="/search" className={styles.link} role="menuitem">
+              <Link
+                href="/search"
+                className={`${styles.link} ${pathname === '/search' ? styles.active : ''}`}
+                role="menuitem"
+                aria-current={pathname === '/search' ? 'page' : undefined}
+              >
                 Search
               </Link>
             </li>
             <li role="none">
-              <Link href="/profile" className={styles.link} role="menuitem">
+              <Link
+                href="/profile"
+                className={`${styles.link} ${pathname.startsWith('/profile') ? styles.active : ''}`}
+                role="menuitem"
+                aria-current={
+                  pathname.startsWith('/profile') ? 'page' : undefined
+                }
+              >
                 Profile
               </Link>
             </li>

@@ -57,6 +57,8 @@
   text-decoration: none;
   transition: all 0.2s;
   font-weight: 700;
+  border-radius: 6px;
+  outline: none;
 
   @media (max-width: 640px) {
     padding: 16px;
@@ -66,6 +68,18 @@
     background-color: var(--disney-teal-alpha);
     border-radius: 8px;
     transition: all 0.2s ease;
+  }
+}
+
+.link:focus-visible {
+  outline: 3px solid var(--disney-teal);
+  outline-offset: 2px;
+  background-color: var(--gray-alpha-200);
+
+  @media (max-width: 640px) {
+    outline-color: var(--background);
+    background-color: var(--background);
+    color: var(--disney-teal);
   }
 }
 
@@ -129,5 +143,16 @@
 
   @media (max-width: 640px) {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.active {
+  background-color: var(--gray-alpha-200);
+  color: var(--disney-teal);
+  pointer-events: none;
+
+  @media (max-width: 640px) {
+    background-color: var(--background);
+    color: var(--disney-teal);
   }
 }

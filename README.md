@@ -29,7 +29,7 @@ pnpm run dev
 - **Next.js 15+** - Server-side rendering, static optimization, image optimization, API routes
 - **PNPM** - Efficient package management with hard linking and strict dependency control
 - **TypeScript** - Type safety and enhanced developer experience
-- **React Query** - Server state management and caching
+- **React Query** - Client state management and caching
 
 ### Performance Features
 
@@ -42,7 +42,7 @@ pnpm run dev
 - **Image Optimization**
   - Prefer AVIF format (50-90% smaller than JPEG)
   - WebP fallback support
-  - Priority loading above-the-fold for character profile pages
+  - Above-the-fold priority loading for character profile pages
   - Lazy loading for grid content
 
 ### User Interface

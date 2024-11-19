@@ -41,7 +41,6 @@ export default function CharacterLayout({
 }) {
   return (
     <>
-      {' '}
       <main>
         {children}
         <FeaturedCharacters />

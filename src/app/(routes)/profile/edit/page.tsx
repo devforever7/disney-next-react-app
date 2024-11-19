@@ -86,7 +86,7 @@ export default async function EditProfilePage() {
   }
 
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <form action={handleSubmit} className={styles.form} noValidate>
         <div className={styles.formHeader}>
           <h1>{profile ? 'Edit Profile' : 'Create Profile'}</h1>
@@ -205,6 +205,6 @@ export default async function EditProfilePage() {
           )}
         </div>
       </form>
-    </main>
+    </div>
   );
 }

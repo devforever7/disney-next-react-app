@@ -21,7 +21,6 @@ export default function ProfileLayout({
 }) {
   return (
     <>
-      {' '}
       <main>{children}</main>
     </>
   );

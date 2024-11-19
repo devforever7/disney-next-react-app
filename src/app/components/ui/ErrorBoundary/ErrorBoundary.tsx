@@ -42,12 +42,12 @@ export default function ErrorBoundary({
   }, [error]);
 
   return (
-    <div className={styles.error}>
+    <section className={styles.error}>
       <h1>{message}</h1>
       <pre>{error.message}</pre>
       <button onClick={reset} className={styles.retryButton}>
         Try again
       </button>
-    </div>
+    </section>
   );
 }

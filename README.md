@@ -63,7 +63,10 @@ pnpm run dev
 
 - Add more tests
 - Add pagination to search results
-- Move `<nav />` element outside of `<main/>` tag (`Navbar` component)
+- Move `<nav />` element outside of `<main/>` tag (`NavMenu` component)
+- Ensure `NavMenu` traps focus within itself when open
+- Create `Navigation` component in `components/layout` directory to handle navigation, and to combine both `NavMenu` and `SearchBar` components. Refactor
+  and move `NavMenu` and `SearchBar` accordingly.
 
 ## 📝 License & Attribution
 

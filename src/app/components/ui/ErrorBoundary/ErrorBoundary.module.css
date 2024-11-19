@@ -1,18 +1,21 @@
 .error {
   color: var(--error);
   text-align: center;
-  padding: 32px;
+  padding: 12px 0;
+  display: grid;
+  gap: 16px;
 }
 
 .retryButton {
-  margin-top: 16px;
   padding: 12px 24px;
-  background: var(--button-primary-hover);
+  background: var(--error);
   color: var(--inverted-foreground);
+  font-weight: 900;
   border: none;
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .retryButton:hover {

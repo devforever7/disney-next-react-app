@@ -47,8 +47,8 @@ pnpm run dev
 
 ### User Interface
 
-- Responsive design
-- Accessible navigation
+- Responsive and accessible design
+- Navigation menu via avatar button
 - Skeleton loading states and error boundaries
 - Search with query parameters
 - HTTP-only cookies for secure profile management
@@ -65,9 +65,9 @@ pnpm run dev
 - Add pagination to search results
 - Move `<nav />` element outside of `<main/>` tag (`NavMenu` component)
 - Ensure `NavMenu` traps focus within itself when open
-- Create `Navigation` component in `components/layout` directory to handle navigation, and to combine both `NavMenu` and `SearchBar` components. Refactor
-  and move `NavMenu` and `SearchBar` accordingly.
+- Create `Navigation` component in `components/layout` directory to handle navigation, and to consolidate `NavMenu` and `SearchBar` components.
 
 ## 📝 License & Attribution
 
 This project uses the Disney API for educational purposes only. All character content belongs to Disney.
+both

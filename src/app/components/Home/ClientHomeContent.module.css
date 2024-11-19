@@ -9,7 +9,7 @@
 
 .noResults {
   text-align: center;
-  padding: 32px;
+  padding: 16px;
   background-color: var(--gray-alpha-200);
   border-radius: 8px;
   font-size: 18px;

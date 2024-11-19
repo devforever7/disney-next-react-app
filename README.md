@@ -57,7 +57,7 @@ pnpm run dev
 
 - ESLint & Prettier configuration
 - Jest & React Testing Library setup
-- Server and client components, and utility unit testing
+- Unit testing for server and client components, hooks, server actions and utils.
 
 ### Follow-up
 

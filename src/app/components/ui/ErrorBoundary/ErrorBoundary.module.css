@@ -1,5 +1,5 @@
 .error {
-  color: #ef4444;
+  color: var(--error);
   text-align: center;
   padding: 32px;
 }
@@ -8,7 +8,7 @@
   margin-top: 16px;
   padding: 12px 24px;
   background: var(--button-primary-hover);
-  color: white;
+  color: var(--inverted-foreground);
   border: none;
   border-radius: 6px;
   font-size: 14px;

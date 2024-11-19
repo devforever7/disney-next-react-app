@@ -19,7 +19,7 @@ export const CardGridSkeleton = ({ count = 8 }: ICardGridSkeletonProps) => {
   const skeletons = Array.from({ length: count }, (_, i) => i);
 
   return (
-    <div className={styles.gridSkeleton}>
+    <div className={styles.gridSkeleton} aria-label="Loading content">
       {skeletons.map((i) => (
         <CardSkeleton key={i} />
       ))}

@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} aria-label="Site footer">
       <div className={styles.content}>
         <Image
           src="/disney-logo.svg"

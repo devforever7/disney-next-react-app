@@ -9,6 +9,7 @@
   cursor: pointer;
   border-radius: 50%;
   transition: background-color 0.2s;
+  height: 64px;
 }
 
 .avatarButton:hover {
@@ -61,7 +62,7 @@
     padding: 16px;
     text-align: center;
     font-size: 18px;
-    color: var(--background);
+    color: var(--inverted-foreground);
     background-color: var(--disney-teal-alpha);
     border-radius: 8px;
     transition: all 0.2s ease;

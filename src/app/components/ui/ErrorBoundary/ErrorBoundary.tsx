@@ -9,7 +9,7 @@
  *
  * Features:
  * - Consistent error message display
- * - Error logging to console in development
+ * - Error logging to console
  * - Retry functionality
  * - Custom error messages per usage
  * - TypeScript support for Next.js error types

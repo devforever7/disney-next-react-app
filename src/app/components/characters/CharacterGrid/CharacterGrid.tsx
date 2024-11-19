@@ -8,22 +8,24 @@ interface ICharacterGridProps {
 
 export function CharacterGrid({ characters }: ICharacterGridProps) {
   return (
-    <div className={styles.grid}>
+    <ul className={styles.grid}>
       {characters.map((character) => {
         if (!character?._id || !character.name || !character.imageUrl) {
           return null;
         }
 
         return (
-          <CharacterCard
-            key={character._id}
-            id={character._id}
-            name={character.name}
-            imageUrl={character.imageUrl}
-            films={character.films}
-          />
+          <li key={character._id}>
+            <CharacterCard
+              key={character._id}
+              id={character._id}
+              name={character.name}
+              imageUrl={character.imageUrl}
+              films={character.films}
+            />
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }

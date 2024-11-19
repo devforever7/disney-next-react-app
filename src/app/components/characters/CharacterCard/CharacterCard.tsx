@@ -26,11 +26,11 @@ export const CharacterCard = ({
   films,
 }: ICharacterCardProps) => {
   return (
-    <div className={styles.card}>
+    <article className={styles.card} aria-label={`Card for ${name}`}>
       <div className={styles.imageWrapper}>
         <Image
           src={imageUrl}
-          alt=""
+          alt={`Portrait of ${name}`}
           fill
           className={styles.image}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -44,10 +44,14 @@ export const CharacterCard = ({
             <p className={styles.truncate}>{films.join(', ') || 'None'}</p>
           </div>
         </div>
-        <Link href={`/character/${id}`} className={styles.viewProfile}>
+        <Link
+          href={`/character/${id}`}
+          className={styles.viewProfile}
+          aria-label={`View ${name}'s full profile`}
+        >
           VIEW PROFILE
         </Link>
       </div>
-    </div>
+    </article>
   );
 };

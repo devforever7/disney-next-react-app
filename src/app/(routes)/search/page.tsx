@@ -58,6 +58,7 @@ const SearchResults = ({ searchTerm }: { searchTerm: string }) => {
       </SearchResultsWrapper>
     );
 
+  // caught and properly surfaced by error boundary
   if (isError) throw new Error(`Failed to load characters: ${error.message}`);
 
   if (!response?.data?.length) {

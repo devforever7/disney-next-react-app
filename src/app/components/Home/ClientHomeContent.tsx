@@ -33,28 +33,30 @@ export const ClientHomeContent = ({
   }, [searchTerm, initialCharacters]);
 
   return (
-    <section className={styles.wrapper} role="status">
+    <section className={styles.wrapper}>
       <SearchBar onSearch={setSearchTerm} />
-      {filteredCharacters.length === 0 ? (
-        <p className={styles.noResults}>
-          {searchTerm ? (
-            <>
-              Characters matching{' '}
-              <strong className={styles.searchTerm}>{searchTerm}</strong> not in
-              preloaded list.{' '}
-              <Link href={`/search?q=${searchTerm}`}>
-                Click here to search all characters.
-              </Link>
-            </>
-          ) : (
-            'No characters available'
-          )}
-        </p>
-      ) : (
-        <div className={styles.gridWrapper}>
-          <CharacterGrid characters={filteredCharacters} />
-        </div>
-      )}
+      <div role="status">
+        {filteredCharacters.length === 0 ? (
+          <p className={styles.noResults}>
+            {searchTerm ? (
+              <>
+                Characters matching{' '}
+                <strong className={styles.searchTerm}>{searchTerm}</strong> not
+                in preloaded list.{' '}
+                <Link href={`/search?q=${searchTerm}`}>
+                  Click here to search all characters.
+                </Link>
+              </>
+            ) : (
+              'No characters available'
+            )}
+          </p>
+        ) : (
+          <div className={styles.gridWrapper}>
+            <CharacterGrid characters={filteredCharacters} />
+          </div>
+        )}
+      </div>
     </section>
   );
 };

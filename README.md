@@ -44,6 +44,9 @@ pnpm run dev
   - WebP fallback support
   - Above-the-fold priority loading for character profile pages
   - Lazy loading for grid content
+  - Images are optimized via Next Image component
+  - Automatic CDN caching on Vercel
+  - Manual CDN setup required for other platforms
 
 ### User Interface
 
